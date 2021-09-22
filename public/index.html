@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File sender</title>
+</head>
+<body>
+    <h2>Enviar un archivo</h2>
+    <form method="POST" action="/upload-file" enctype="multipart/form-data">
+        <div>
+            <label>Selecciona tu archivo:</label>
+            <input type="file" name="file" />
+        </div>
+        <div>
+            <input type="submit" name="btn_upload_file" value="Subir" />
+        </div>
+    </form>
+    <hr>
+    <h2>Enviar multiples archivos</h2>
+    <form method="POST" action="/upload-files" enctype="multipart/form-data">
+        <div>
+            <label>Selecciona tus archivos:</label>
+            <input type="file" name="multiple-files" multiple />
+        </div>
+        <div>
+            <input type="submit" name="btn_upload_files" value="Subir" />
+        </div>
+    </form>
+</body>
+</html>
